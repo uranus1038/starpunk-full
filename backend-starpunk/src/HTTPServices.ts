@@ -1,10 +1,11 @@
 import express, { Request, Response, Router } from "express";
-
+import cors from "cors" ;
 export class HttpWebAppServices{
     private app: express.Application = express();
     constructor(port:number) {
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: true }));
+        this.app.use(cors());
         this.listener(port);
     }
     public login(path: string, callback: (data: any) => void): void {
