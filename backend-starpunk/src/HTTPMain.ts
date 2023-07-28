@@ -1,4 +1,8 @@
-import { HttpWebAppServices } from "./HTTPServices";
+import  {HttpWebAppServices}  from "./HTTPServices";
+const app = new HttpWebAppServices();
+//api web
+app.creation("/api/creation/submit");
 
-const app = new HttpWebAppServices(8000);
-app.login("/login",(result)=>{console.log(result);});
+//api app
+app.playerLogin("/api/user/getPlyerLogin/");
+app.listener(8000);

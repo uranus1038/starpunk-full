@@ -1,0 +1,18 @@
+{   
+    "mysql" :
+    {
+        "host" : "localhost",
+        "user" : "root",
+        "password" : "",
+        "database" : "uranusx_db"
+    } ,
+    "token" :
+    {
+        "pin" : "YUMI8888_Aum_xckvASDKzxcA*/SDasd#@$"
+    }
+    ,
+    "HTTPAPI" : 
+    {
+        "creation_user" : "http://localhost:8000/api/creation/submit"
+    }
+}

@@ -1,0 +1,13 @@
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.umi-color32-blue-pearl
+{
+    background-color: #1c2940;
+}
+.umi-color32-blue-sky
+{
+    background-color: #334366;
+}
