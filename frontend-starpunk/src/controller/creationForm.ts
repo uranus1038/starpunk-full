@@ -120,7 +120,7 @@ export class creationForm {
                         gender: this.state.gender ,
                         token: token.pin 
                     }).then(respon=>{
-                        const status = respon.data.status ;
+                        const status:string = respon.data.status ;
                         if(status === "email-active")
                         {
                             document.querySelector<HTMLInputElement>("#email")?.setAttribute("class", "form-control is-invalid");

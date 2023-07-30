@@ -19,7 +19,7 @@ const CreationFormEN: FC = () => {
                     }}
                         id="email"
                         type="email" className="form-control"
-                        placeholder="name@example.com" />
+                        placeholder="email@example.com" />
                     <label>Email address</label>
                 </div>
                 <div className="form-floating mb-1">
