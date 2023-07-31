@@ -2,8 +2,7 @@ import { token as env} from "../../../umi-config.json";
 import rateLimit from 'express-rate-limit';
 import { Request, Response, NextFunction } from 'express';
 export class YUMI {
-    public limiter:any ;
-    public limiter2:any ;
+    public limiter:any ; 
     constructor ()
     {
         // Limite time requast

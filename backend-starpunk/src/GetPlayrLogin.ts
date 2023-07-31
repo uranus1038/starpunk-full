@@ -17,6 +17,7 @@ export class GetPlayerLogin {
         const passWord:string = QUk8sYq_x;
         console.log("u:"+email + " pw:" + passWord);
         UMIMysql.query("SELECT * FROM accouts WHERE email = ? ", [email]).then(([result]) => {
+            // if(Array.isArray(result))
             if ((<any[]>result).length === 1) {
                  if(bcrypt.compareSync(passWord, (<any[]>result)[0].passWord)){
                     reply.status(200).send(JSON.stringify({
@@ -37,5 +38,4 @@ export class GetPlayerLogin {
             console.error(error);
         })
     }
-
 }
