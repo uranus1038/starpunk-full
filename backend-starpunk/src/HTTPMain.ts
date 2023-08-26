@@ -5,4 +5,5 @@ app.creation("/api/creation/submit");
 
 //api app
 app.playerLogin("/api/user/getPlyerLogin/");
+app.playerData("/api/user/getPlyerData/");
 app.listener(8000);

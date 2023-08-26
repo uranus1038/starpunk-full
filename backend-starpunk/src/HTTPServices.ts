@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors" ;
 import { CreationUser } from "./CreationUser";
 import { GetPlayerLogin } from "./GetPlayrLogin";
+import { GetData } from "./GetData";
 export class HttpWebAppServices{
     private app: express.Application = express();
     constructor() {
@@ -15,9 +16,13 @@ export class HttpWebAppServices{
     public playerLogin(path: string): void {
         this.app.use(path, new GetPlayerLogin().router);
     }
+    public playerData(path: string): void {
+        this.app.use(path, new GetData().router);
+    }
     public listener(port:number)
     {
         this.app.listen(port,()=>{console.log("UMILog::Server start port : " +port);
         })
     }
+    
 }
