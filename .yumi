@@ -1,3 +1,29 @@
 // god-u@gmail.com 123456789123
-//01 = userName
-//
+
+
+// key value
+//1 = userName
+//2 = UID
+//3 = CID
+//4 = PID
+//5 = owenerGuild
+//6 = myCommand
+//7 = type
+//8 = Name
+//9 = str
+//10 = agi
+//11 = vit
+//12 = mag
+//13 = cha
+//14 = dex
+//15 = lck
+//16 = lv
+//17 = exp
+//18 = nexp
+//19 = slot
+//20 = rank
+//21 = gold
+//22 = star
+//23 = roleGuild
+//24 = rp
+//25 = mrp

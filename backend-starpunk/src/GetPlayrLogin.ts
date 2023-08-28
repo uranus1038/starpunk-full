@@ -1,6 +1,6 @@
 import express, { Request, Response, Router } from 'express';
 import { UMIMysql } from '../config/database';
-import {accout} from '../interface/accout'
+import {accout} from '../interface/user'
 import bcrypt from 'bcrypt';
 import { YUMI } from "./UMIProtection/YUMI";
 export class GetPlayerLogin {
